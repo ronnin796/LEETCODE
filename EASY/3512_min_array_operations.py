@@ -1,6 +1,6 @@
 class Solution:
-    def countOdds(self, low: int, high: int) -> int:
-        if low % 2 == 0 and high % 2 == 0:
-            return (high - low) // 2
-        else:
-            return ((high - low) // 2) + 1
+    def minOperations(self, nums: List[int], k: int) -> int:
+        total = sum(nums)
+        remainder = total % k
+        return remainder
+           
